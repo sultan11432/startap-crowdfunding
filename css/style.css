@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  background-color: rgb(30 30 30 / 55%);
+  backdrop-filter: blur(15px);
+  padding: 1.2rem;
+}
+.header__up {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__up h1 {
+  font-size: 22px;
+}
+nav ul {
+  display: flex;
+  gap: 35px;
+}
