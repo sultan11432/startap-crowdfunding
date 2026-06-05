@@ -31,25 +31,21 @@ nav ul {
   width: 100%;
   min-height: 100vw;
   background-size: cover;
-  
 }
 .hero__text {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
-.hero__title  {
+.hero__title {
   margin-top: 380px;
   max-width: 500px;
-  
 }
 .hero__title h2 {
   font-size: 48px;
   line-height: 55px;
-  color: #C9E23A;
+  color: #c9e23a;
   font-weight: 800;
-
 }
 .hero__title p {
   margin-top: 22px;
@@ -57,23 +53,22 @@ nav ul {
   opacity: 90%;
 }
 .hero__card {
-  margin-top: 380px ;
+  margin-top: 380px;
   display: flex;
   flex-direction: column;
-  background: #F5F3EE;
+  background: #f5f3ee;
   padding: 50px;
   width: 370px;
   height: 289px;
   border-radius: 16px;
 }
 .hero__card h2 {
-  font-size: 38px ;
+  font-size: 38px;
   font-weight: 800;
   line-height: 60.8px;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
 .hero__card-text {
-  
   color: #888888;
   font-weight: 400;
   font-size: 13px;
@@ -83,141 +78,323 @@ nav ul {
   margin-top: 5px;
   width: 100%;
   height: 8px;
-  background: #DDDDDD;
+  background: #dddddd;
   border-radius: 6px;
 }
 .hero__line-after {
   height: 8px;
   width: 72%;
-  background-color: #C9E23A;
+  background-color: #c9e23a;
   border-radius: 6px;
 }
 .hero__info {
-  color: #2B2B2B;
+  color: #2b2b2b;
   font-size: 13px;
   line-height: 20.8px;
   font-weight: 400;
   margin-top: 5px;
-
 }
 
 .hero__btn {
   margin-top: 20px;
-text-align: center;
- background-color:  #5A5A52 ;
-font-size: 15px ;
-font-weight: 600;
-padding: 10px;
-border-radius: 8px ;
+  text-align: center;
+  background-color: #5a5a52;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  border-radius: 8px;
 }
-@media (max-width:870px) {
-.hero__text {
-display: flex;
-flex-direction: column;
-}
-
-.hero__title  {
-  margin-top: 620px;
-  max-width: 600px;
-}
-.hero__title h2 {
-  font-size: 26.9px;
-  line-height: 55px;
-  color: #C9E23A;
-  font-weight: 800;
-}
-.hero__title p {
-  margin-top: 2px;
-  line-height: 28.9px;
-  opacity: 90%;
-}
-.hero__card {
-  margin-top: 30px ;
-  display: flex;
-  flex-direction: column;
-  background: #F5F3EE;
-  padding: 50px;
-  width: 370px;
-  height: 289px;
-  border-radius: 16px;
-}
-
-}
-@media (max-width:320px) {
-
+@media (max-width: 870px) {
   .hero__text {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__title {
+    margin-top: 620px;
+    max-width: 600px;
+  }
+  .hero__title h2 {
+    font-size: 26.9px;
+    line-height: 55px;
+    color: #c9e23a;
+    font-weight: 800;
+  }
+  .hero__title p {
+    margin-top: 2px;
+    line-height: 28.9px;
+    opacity: 90%;
+  }
+  .hero__card {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #f5f3ee;
+    padding: 50px;
+    width: 370px;
+    height: 289px;
+    border-radius: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .hero__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero__title {
+    margin-top: 150px;
+    max-width: 600px;
+  }
+  .hero__title h2 {
+    font-size: 22.9px;
+    line-height: 55px;
+    color: #c9e23a;
+    font-weight: 800;
+  }
+  .hero__title p {
+    margin-top: 2px;
+    line-height: 28.9px;
+    opacity: 90%;
+  }
+
+  .hero__card {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    background: #f5f3ee;
+    padding: 50px;
+    width: 288px;
+    height: 270px;
+    border-radius: 16px;
+  }
+  .hero__card h2 {
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 60.8px;
+    color: #1a1a1a;
+  }
+  .hero__card-text {
+    color: #888888;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20.8px;
+  }
+  .hero__line {
+    margin-top: 5px;
+    width: 100%;
+    height: 8px;
+    background: #dddddd;
+    border-radius: 6px;
+  }
+  .hero__line-after {
+    height: 8px;
+    width: 72%;
+    background-color: #c9e23a;
+    border-radius: 6px;
+  }
+  .hero__info {
+    color: #2b2b2b;
+    font-size: 13px;
+    line-height: 20.8px;
+    font-weight: 400;
+    margin-top: 5px;
+  }
+
+  .hero__btn {
+    margin-top: 20px;
+    text-align: center;
+    background-color: #5a5a52;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 8px;
+  }
+}
+.why-section {
+  margin-top: 400px;
+  background-color: #3a3a45;
+  padding: 60px 20px;
 }
 
-.hero__title  {
-  margin-top: 150px;
-  max-width: 600px;
-}
-.hero__title h2 {
-  font-size: 22.9px;
-  line-height: 55px;
-  color: #C9E23A;
+.why-section h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 36px;
   font-weight: 800;
-}
-.hero__title p {
-  margin-top: 2px;
-  line-height: 28.9px;
-  opacity: 90%;
+  text-align: center;
+  margin-bottom: 40px;
 }
 
-.hero__card {
-  margin-top: 30px ;
+.why-content {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.why-text {
+  flex: 1;
+}
+
+.why-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #AAB0BE;
+
+  margin-bottom: 16px;
+}
+
+.why-text p {
+  font-size: 14px;
+  line-height: 1.7;
+  opacity: 0.85;
+}
+
+.why-image img {
+  width: 220px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+
+.rewards-section {
+  background-color: #888899;
+  padding: 60px 20px;
+}
+
+.rewards-section h2 {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  color: #1a1a1a;
+}
+
+.cards-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 960px;
+}
+
+.card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  width: calc(50% - 10px);
   display: flex;
   flex-direction: column;
-  background: #F5F3EE;
-  padding: 50px;
-  width: 288px;
-  height: 270px;
-  border-radius: 16px;
 }
-.hero__card h2 {
-  font-size: 32px ;
+
+.card:nth-child(3) {
+  width: calc(50% - 10px);
+  margin: 0 auto;
+}
+
+.card-top {
+  height: 120px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 16px;
+}
+
+.card:nth-child(1) .card-top {
+  background: linear-gradient(135deg, #a8d970, #c9e23a);
+}
+
+.card:nth-child(2) .card-top {
+  background: linear-gradient(135deg, #7ab648, #a8d970);
+}
+
+.card:nth-child(3) .card-top {
+  background: linear-gradient(135deg, #a0b8d8, #7090b8);
+}
+
+.card-top h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.card-body {
+  padding: 16px;
+  flex: 1;
+  color: #333;
+}
+
+.card-body p {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+
+.card-price {
+  font-size: 16px;
   font-weight: 800;
-  line-height: 60.8px;
-  color: #1A1A1A;
+  color: #1a1a1a;
 }
-.hero__card-text {
-  
-  color: #888888;
-  font-weight: 400;
-  font-size: 13px;
-  line-height: 20.8px;
-}
-.hero__line {
-  margin-top: 5px;
+
+.card-btn {
+  display: block;
   width: 100%;
-  height: 8px;
-  background: #DDDDDD;
-  border-radius: 6px;
-}
-.hero__line-after {
-  height: 8px;
-  width: 72%;
-  background-color: #C9E23A;
-  border-radius: 6px;
-}
-.hero__info {
-  color: #2B2B2B;
-  font-size: 13px;
-  line-height: 20.8px;
-  font-weight: 400;
-  margin-top: 5px;
-
+  padding: 12px;
+  background-color: #6b6b5e;
+  color: white;
+  border: none;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  border-radius: 0 0 16px 16px;
 }
 
-.hero__btn {
-  margin-top: 20px;
-text-align: center;
- background-color:  #5A5A52 ;
-font-size: 15px ;
-font-weight: 600;
-padding: 10px;
-border-radius: 8px ;
+.card-btn:hover {
+  background-color: #5a5a52;
 }
+
+
+@media (max-width: 768px) {
+  .why-content {
+    flex-direction: column;
+  }
+
+  .why-image img {
+    width: 100%;
+  }
+
+  .why-section h2 {
+    font-size: 28px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .card:nth-child(3) {
+    width: 100%;
+    margin: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .why-section {
+    padding: 40px 16px;
+  }
+
+  .rewards-section {
+    padding: 40px 16px;
+  }
+
+  .why-section h2 {
+    font-size: 24px;
+  }
+
+  .rewards-section h2 {
+    font-size: 24px;
+  }
 }
