@@ -1,35 +1,40 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>StartAp — Эко-отель купольного типа</title>
   </head>
   <body>
+
     <header>
       <div class="container">
-        <div class="header__up">
-          <h1>StartAp</h1>
-          <nav>
+        <div class="header__inner">
+          <h1 class="header__logo">StartAp</h1>
+          <nav class="header__nav">
             <ul>
               <li><a href="#">Главное</a></li>
               <li><a href="#">О нас</a></li>
               <li><a href="#">Связь</a></li>
             </ul>
           </nav>
+          <button class="burger" aria-label="Меню">
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </div>
     </header>
-    <div class="hero">
-      <div class="hero__text container">
+
+    <section class="hero">
+      <div class="container hero__inner">
         <div class="hero__title">
           <h2>Эко-отель купольного типа в горах Алтая</h2>
           <p>
@@ -39,19 +44,25 @@
           </p>
         </div>
         <div class="hero__card">
-          <h2>1 450 000 ₽</h2>
-          <p class="hero__card-text">собрано из 2 000 000 ₽</p>
+          <h2 class="hero__card-sum">1 450 000 ₽</h2>
+          <p class="hero__card-label">собрано из 2 000 000 ₽</p>
           <div class="hero__line">
-            <div class="hero__line-after"></div>
+            <div class="hero__line-fill"></div>
           </div>
-          <p class="hero__info">512 спонсоров</p>
-          <p class="hero__info">12 дней осталось</p>
+          <p class="hero__card-info">512 спонсоров</p>
+          <p class="hero__card-info">12 дней осталось</p>
           <a class="hero__btn" href="#">Поддержать проект</a>
         </div>
       </div>
+      <div class="hero__scroll-hint">
+        <span>О нашем проекте</span>
+      </div>
+    </section>
 
-      <section class="why-section">
-        <h2>Почему это важно</h2>
+  
+    <section class="why-section">
+      <div class="container">
+        <h2 class="section-title">Почему это важно</h2>
         <div class="why-content">
           <div class="why-text">
             <h3>Современный туризм меняется</h3>
@@ -67,18 +78,20 @@
             </p>
           </div>
           <div class="why-image">
-            <img src="/img/image 1.webp" alt="Экология" />
+            <img src="img/image 1.webp" alt="Экология — росток в руках" />
           </div>
         </div>
-      </section>
+      </div>
+    </section>
 
-     
-      <section class="rewards-section">
-        <h2>Карточки вознаграждений</h2>
+  
+    <section class="rewards-section">
+      <div class="container">
+        <h2 class="section-title rewards-section__title">Карточки вознаграждений</h2>
+        <div class="cards-grid">
 
-        <div class="cards-grid container">
           <div class="card">
-            <div class="card-top">
+            <div class="card-top card-top--green-light">
               <h3>Эко-мерч проекта</h3>
             </div>
             <div class="card-body">
@@ -93,7 +106,7 @@
           </div>
 
           <div class="card">
-            <div class="card-top">
+            <div class="card-top card-top--green-dark">
               <h3>Именное дерево на Алтае</h3>
             </div>
             <div class="card-body">
@@ -107,8 +120,8 @@
             <button class="card-btn">Оформить</button>
           </div>
 
-          <div class="card">
-            <div class="card-top">
+          <div class="card card--center">
+            <div class="card-top card-top--blue">
               <h3>Раннее бронирование: 2 ночи в куполе</h3>
             </div>
             <div class="card-body">
@@ -120,21 +133,58 @@
             </div>
             <button class="card-btn">Оформить</button>
           </div>
+
         </div>
-      </section>
-        <section class="contact-section container">
-    <div class="contact-left">
-      <h2>У вас есть свой эко-проект?<br>или Остались вопросы о платформе?</h2>
-      <p>Напишите нам. Наша команда поможет вам оформить краудфандинговую кампанию, настроить вознаграждения и запустить сбор средств. Мы отвечаем в течение 24 часов.</p>
-    </div>
-    <div class="contact-right">
-      <input type="text" placeholder="Ваше имя" />
-      <input type="email" placeholder="Ваш e-mail" />
-      <textarea placeholder="Введите ваше сообщение..."></textarea>
-      <button class="btn-submit">Отправить заявку</button>
-    </div>
-  </section>
-    </div>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container contact-inner">
+        <div class="contact-left">
+          <h2>У вас есть свой эко-проект? или Остались вопросы о платформе?</h2>
+          <p>
+            Напишите нам. Наша команда поможет вам оформить краудфандинговую
+            кампанию, настроить вознаграждения и запустить сбор средств. Мы
+            отвечаем в течение 24 часов.
+          </p>
+        </div>
+        <div class="contact-right">
+          <input type="text" placeholder="Ваше имя" />
+          <input type="email" placeholder="Ваш e-mail" />
+          <textarea placeholder="Введите ваше сообщение..."></textarea>
+          <button class="btn-submit">Отправить заявку</button>
+        </div>
+      </div>
+    </section>
+
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <div class="footer-brand">
+          <div class="footer-logo">StartAp</div>
+          <p>StartAp. Платформа народного финансирования эко-проектов.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Проекты</h4>
+          <a href="#">Технологий</a>
+          <a href="#">Экология</a>
+          <a href="#">Игры</a>
+          <a href="#">Дизайн</a>
+        </div>
+        <div class="footer-col">
+          <h4>Помощь</h4>
+          <a href="#">Как это работает</a>
+          <a href="#">Правила платформы</a>
+          <a href="#">Поддержка</a>
+        </div>
+        <div class="footer-col">
+          <h4>Соц.сети</h4>
+          <span class="footer-contact-label">Связаться с нами:</span>
+          <a href="mailto:info@startap.kz">info@startap.kz</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
-  <script src="script.js"></script>
 </html>
