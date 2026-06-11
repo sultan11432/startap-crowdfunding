@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
@@ -14,16 +15,16 @@
     <title>StartAp — Эко-отель купольного типа</title>
   </head>
   <body>
-
+ 
     <header>
       <div class="container">
         <div class="header__inner">
           <h1 class="header__logo">StartAp</h1>
           <nav class="header__nav">
             <ul>
-              <li><a href="#">Главное</a></li>
-              <li><a href="#">О нас</a></li>
-              <li><a href="#">Связь</a></li>
+              <li><a href="#hero">Главное</a></li>
+              <li><a href="#about">О нас</a></li>
+              <li><a href="#contact">Связь</a></li>
             </ul>
           </nav>
           <button class="burger" aria-label="Меню">
@@ -32,8 +33,8 @@
         </div>
       </div>
     </header>
-
-    <section class="hero">
+ 
+    <section class="hero" id="hero">
       <div class="container hero__inner">
         <div class="hero__title">
           <h2>Эко-отель купольного типа в горах Алтая</h2>
@@ -51,16 +52,15 @@
           </div>
           <p class="hero__card-info">512 спонсоров</p>
           <p class="hero__card-info">12 дней осталось</p>
-          <a class="hero__btn" href="#">Поддержать проект</a>
+          <a class="hero__btn" href="#contact">Поддержать проект</a>
         </div>
       </div>
       <div class="hero__scroll-hint">
         <span>О нашем проекте</span>
       </div>
     </section>
-
-  
-    <section class="why-section">
+ 
+    <section class="why-section" id="about">
       <div class="container">
         <h2 class="section-title">Почему это важно</h2>
         <div class="why-content">
@@ -83,13 +83,12 @@
         </div>
       </div>
     </section>
-
-  
+ 
     <section class="rewards-section">
       <div class="container">
         <h2 class="section-title rewards-section__title">Карточки вознаграждений</h2>
         <div class="cards-grid">
-
+ 
           <div class="card">
             <div class="card-top card-top--green-light">
               <h3>Эко-мерч проекта</h3>
@@ -102,9 +101,9 @@
               </p>
               <div class="card-price">500 ₽</div>
             </div>
-            <button class="card-btn">Оформить</button>
+            <button class="card-btn" onclick="scrollToContact()">Оформить</button>
           </div>
-
+ 
           <div class="card">
             <div class="card-top card-top--green-dark">
               <h3>Именное дерево на Алтае</h3>
@@ -117,9 +116,9 @@
               </p>
               <div class="card-price">3 500 ₽</div>
             </div>
-            <button class="card-btn">Оформить</button>
+            <button class="card-btn" onclick="scrollToContact()">Оформить</button>
           </div>
-
+ 
           <div class="card card--center">
             <div class="card-top card-top--blue">
               <h3>Раннее бронирование: 2 ночи в куполе</h3>
@@ -131,14 +130,14 @@
                 скидкой 40%. Завтраки включены!
               </p>
             </div>
-            <button class="card-btn">Оформить</button>
+            <button class="card-btn" onclick="scrollToContact()">Оформить</button>
           </div>
-
+ 
         </div>
       </div>
     </section>
-
-    <section class="contact-section">
+ 
+    <section class="contact-section" id="contact">
       <div class="container contact-inner">
         <div class="contact-left">
           <h2>У вас есть свой эко-проект? или Остались вопросы о платформе?</h2>
@@ -149,15 +148,14 @@
           </p>
         </div>
         <div class="contact-right">
-          <input type="text" placeholder="Ваше имя" />
+          <input id="input-name" type="text" placeholder="Ваше имя" />
           <input type="email" placeholder="Ваш e-mail" />
           <textarea placeholder="Введите ваше сообщение..."></textarea>
           <button class="btn-submit">Отправить заявку</button>
         </div>
       </div>
     </section>
-
-
+ 
     <footer class="footer">
       <div class="container footer__inner">
         <div class="footer-brand">
@@ -184,7 +182,8 @@
         </div>
       </div>
     </footer>
-
+ 
     <script src="script.js"></script>
   </body>
 </html>
+ 
