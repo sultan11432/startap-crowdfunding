@@ -16,3 +16,26 @@ if (burger && nav) {
   });
 }
  
+function scrollToContact() {
+  const contact = document.getElementById('contact');
+  const input = document.getElementById('input-name');
+  if (contact) {
+    contact.scrollIntoView({ behavior: 'smooth' });
+    setTimeout(() => { if (input) input.focus(); }, 600);
+  }
+}
+ 
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', function (e) {
+    const id = this.getAttribute('href').slice(1);
+    const target = document.getElementById(id);
+    if (target) {
+      e.preventDefault();
+      target.scrollIntoView({ behavior: 'smooth' });
+      if (nav.classList.contains('header__nav--open')) {
+        nav.classList.remove('header__nav--open');
+      }
+    }
+  });
+});
+ 
